@@ -52,7 +52,7 @@ export class Mosh extends Component {
           </thead>
           <tbody>
         {this.state.movies.map (movie => (
-          <tr>
+          <tr key={movie.id}>
             <td>{movie.id}</td>
             <td>{movie.title}</td>
             <td>{movie.Rate}</td>
